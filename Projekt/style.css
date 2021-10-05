@@ -1,0 +1,594 @@
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 120px;
+    border-bottom: solid gray 1px;
+    box-shadow: 0 6px 2px -2px rgb(168, 168, 168);
+}
+
+.subContainer {
+    margin: 0 100px;
+}
+
+.divHeight {
+    height: 400px;
+}
+
+.setHeader {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+    background-image: url('img/logo.png');
+    background-size: contain;
+}
+
+.logoContainer:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.navigationsBar {
+    display: flex;
+    align-items: flex-end;
+    font-weight: bold;
+    margin-top: 75px;
+}
+
+.navigationsBar a {
+    color: black;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navigationsBar a:hover {
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.button:hover {
+    cursor: pointer;
+    
+}
+
+.image {
+    border-radius: 15px;
+}
+
+
+
+/* Adriano Section*/
+
+.mainRicipe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainRicipeExplainantion {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.mainRicipeExplainantion h2 {
+    margin-top: 0;
+}
+
+.dishDescribtion {
+    font-size: 18px;
+    margin-bottom: 150px;
+}
+
+#spaghetti {
+    width: 512px;
+    height: 298px;
+    background-image: url('img/spaghetti-1987454_640.jpg');
+    background-size: cover;
+}
+
+#mainRicipeContainer {
+    display: flex;
+    align-items: center;
+}
+
+/*ricipe section*/
+
+#ricipeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+#ricipeImageAdriano {
+    width: 100%;
+    height: 150px;
+    background-image: url('img/spaghetti-1987454_640.jpg');
+    background-size: cover;
+}
+
+#ricipeImageMelanie {
+    width: 100%;
+    height: 150px;
+    background-image: url('img/croissant.jpg');
+    background-size: cover;
+}
+
+.infoIcons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: solid gray 1px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(194, 193, 193);
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.imageIcon {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+#calendar {
+    width: 130px;
+}
+
+.ingridients {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+#ingridientsLbl {
+    margin-right: 10px;
+}
+
+#inputPortion {
+    height: 30px;
+}
+
+#inputPortionM {
+    height: 30px;
+}
+
+#inputPortionE {
+    height: 30px;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.backgroundGray {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(194, 193, 193);
+}
+
+.backgroundWhite {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+.amount {
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+    height: 20px;
+}
+
+.unit {
+    margin-left: 8px;
+    display: flex;
+    justify-content: flex-start;
+    width: 80px;
+    height: 20px;
+}
+
+#prepTime {
+    width: 150px;
+}
+
+#prepHoleTime {
+    width: 220px;
+}
+
+#prepIcons {
+    border-bottom: none;
+    height: 50px;
+    margin-top: 0px;
+}
+
+.authorImage {
+    margin-right: 60px;
+    display: flex;
+    
+    
+}
+.myImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: solid black 1px;
+    object-fit: cover;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+/* Melanie Section*/
+
+.recipe_section_main {
+    background-color: rgb(230, 225, 225);
+}
+
+.recipe_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230, 225, 225);
+}
+
+.foodimage {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.text_center {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.front {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.container {
+    perspective: 1000px;
+}
+
+.container span{
+    color: black;
+    font-size: 16px;
+}
+
+/* Erkan Section*/
+
+.header_wok {
+    text-align: center;
+}
+
+.wok_description {
+    width: 72%;
+}
+
+.wok_img {
+    display: flex;
+    object-fit: cover;
+}
+
+.size {
+    width: 300px;
+    height: auto
+}
+
+.title_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title_section span {
+    font-size: 18px;
+}
+
+/*footer area*/
+
+.footerContainer {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(105, 104, 104);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footerBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBtn:hover {
+    cursor: pointer;
+}
+
+.copyRight {
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*contact form area*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.formfield {
+    height: 20px;
+    width: 500px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formfield_message {
+    height: 200px;
+    width: 500px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formfield_space {
+    margin-bottom: 30px;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+/*Erkan ricipe*/
+
+#ricipeImageErkan {
+    width: 100%;
+    height: 150px;
+    background-image: url('img/wok-noodles.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*Impressum*/
+
+.impressum_container {
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 12px;
+}
+
+.success-container{
+    width: 100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/*Responsive*/
+
+@media(max-width:850px) {
+    .headerContainer {
+        height: 60px;
+    }
+    .logoContainer {
+        width: 110px;
+        height: 40px;
+    }
+    .navigationsBar {
+        display: none;
+    }
+    .setHeader {
+        height: 60px;
+    }
+    .mainRicipe {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em;
+        padding-bottom: 1.5em;
+    }
+    .divHeight {
+        height: 100%;
+    }
+    .subContainer {
+        margin: 0 30px;
+    }
+    .mainRicipeExplainantion {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .recipe_section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_section {
+        flex-direction: column-reverse;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+    }
+    .wok_description {
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    .footerBar {
+        flex-direction: column;
+    }
+}
+
+@media(max-width:550px) {
+    #spaghetti {
+        width: 256px;
+        height: 149px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .size {
+        width: 200px;
+        height: auto;
+    }
+    .formfield {
+        width: 250px;
+    }
+    .formfield_message{
+        width: 250px;
+    }
+}
+
+
+@media(max-width:450px) {
+    .infoIcons {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ingridients {
+        flex-direction: column;
+    }
+    #prepTime {
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:300px) {
+    #spaghetti {
+        width: 170px;
+        height: 100px;
+    }
+    h2 {
+        text-align: center;
+        
+    }
+    .h1{
+        font-size: 0.7em;
+    }
+    .dishDescribtion {
+        text-align: center;
+    }
+    .formfield {
+        width: 150px;
+    }
+    .formfield_message{
+        width: 150px;
+    }
+}

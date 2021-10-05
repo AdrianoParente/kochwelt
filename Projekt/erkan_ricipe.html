@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="erkan_script.js"></script>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="subContainer" id="ricipeContainer">
+        <h1>Gebratene Wok Nudeln mit Hühnerfleisch</h1>
+        <div class="image" id="ricipeImageErkan"></div>
+        <div class="infoIcons">
+            <div class="icon">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>30 Min.</span>
+            </div>
+            <div class="icon">
+                <img class="imageIcon" src="img\brain-solid.svg">
+                <span>simpel</span>
+            </div>
+            <div class="icon" id="calendar">
+                <img class="imageIcon" src="img\calendar-alt-regular.svg">
+                <span>18-07-2021</span>
+            </div>
+        </div>
+        <div class="ingridients">
+            <div id="ingridientsLbl">Zutaten für</div>
+            <input type="number" min="1" placeholder="1" value="1" id="inputPortionE"> <button class="button"
+                onclick="calculate()">Portionen</button>
+        </div>
+        <div class="table">
+            <div class="backgroundGray">
+                <div class="amount" id="amountE1"></div>
+                <div class="unit" id="unitE1"></div>
+                <div>Chinesische Eiernudeln</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountE2"></div>
+                <div class="unit" id="unitE2"></div>
+                <div>Sojasprossen</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountE3"></div>
+                <div class="unit" id="unitE3"></div>
+                <div>Jungzwiebel</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountE4"></div>
+                <div class="unit" id="unitE4"></div>
+                <div>Öl</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountE5"></div>
+                <div class="unit" id="unitE5"></div>
+                <div>Sojasauce, für das Fleisch</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountE6"></div>
+                <div class="unit" id="unitE6"></div>
+                <div>Sambal Oelek</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountE7"></div>
+                <div class="unit" id="unitE7"></div>
+                <div>Paprikapulver</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountE8"></div>
+                <div class="unit" id="unitE8"></div>
+                <div>Currypulver</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountE9"></div>
+                <div class="unit" id="unitE9"></div>
+                <div>Chillipulver</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountE10"></div>
+                <div class="unit" id="unitE10"></div>
+                <div>Hühnerbrustfilet</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountE11"></div>
+                <div class="unit" id="unitE11"></div>
+                <div>Sojasauce</div>
+            </div>
+
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="infoIcons" id="prepIcons">
+
+            <div class="icon" id="prepTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>30 Minuten</span>
+            </div>
+            <div class="icon" id="prepHoleTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>Gesamtzeit 30 Minuten</span>
+            </div>
+        </div>
+        <p>Zuerst die Eiernudeln nach Packungsanleitung zubereiten.Das Hühnerfleisch von Haut und Sehnen befreien,
+            waschen, mit Küchenpapier trocken tupfen, in dünne Streifen schneiden, in eine Schüssel geben und mit Sambal
+            Oelek und Sojasauce würzen. Jungzwiebel putzen, waschen und klein schneiden.
+            Wok erhitzen, Öl mit 1 Teelöffel Sojasauce verrühren und in den Wok geben. Dann die Zwiebelringe und
+            Hühnerstreifen dazugeben und anbraten. Anschließend die Sprossen beigeben, durchrühren und zuletzt die
+            Nudeln dazugeben.
+            Nun alles für etwa 5 Minuten braten lassen und dabei ständig rühren. Danach die gebratenen Wok Nudeln mit
+            Curry, Chili und Paprikapulver würzen.
+        </p>
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+
+            <div class="authorImage">
+
+            </div>
+
+            <div>
+                <span>Erkan</span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

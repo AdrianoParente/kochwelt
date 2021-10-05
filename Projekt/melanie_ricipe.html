@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="melanie_script.js"></script>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+
+
+    <div class="subContainer" id="ricipeContainer">
+        <h1>Frische Croissants</h1>
+        <div class="image" id="ricipeImageMelanie"></div>
+        <div class="infoIcons">
+            <div class="icon">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>40 Min.</span>
+            </div>
+            <div class="icon">
+                <img class="imageIcon" src="img\brain-solid.svg">
+                <span>normal</span>
+            </div>
+            <div class="icon" id="calendar">
+                <img class="imageIcon" src="img\calendar-alt-regular.svg">
+                <span>16-07-2021</span>
+            </div>
+        </div>
+        <div class="ingridients">
+            <div id="ingridientsLbl">Zutaten für</div>
+            <input type="number" min="1" placeholder="1" value="1" id="inputPortionM"> <button class="button"
+                onclick="calculate()">Portionen</button>
+        </div>
+        <div class="table">
+            <div class="backgroundGray">
+                <div class="amount" id="amountM1"></div>
+                <div class="unit" id="unitM1"></div>
+                <div>Butter</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountM2"></div>
+                <div class="unit" id="unitM2"></div>
+                <div>Zucker</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountM3"></div>
+                <div class="unit" id="unitM3"></div>
+                <div>Mehl</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountM4"></div>
+                <div class="unit" id="unitM4"></div>
+                <div>Salz</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountM5"></div>
+                <div class="unit" id="unitM5"></div>
+                <div>Hefe</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amountM6"></div>
+                <div class="unit" id="unitM6"></div>
+                <div>Ei(er)</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amountM7"></div>
+                <div class="unit" id="unitM7"></div>
+                <div>Milch</div>
+            </div>
+
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="infoIcons" id="prepIcons">
+
+            <div class="icon" id="prepTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>40 Minuten</span>
+            </div>
+            <div class="icon" id="prepHoleTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>Gesamtzeit 40 Minuten</span>
+            </div>
+        </div>
+        <p>Am Vorabend fertige man aus den oben angegebenen Zutaten einen Hefeteig: Milch lauwarm werden lassen, Hefe
+            mit
+            etwas Zucker und Milch verrühren, kurz stehen lassen, dann mit allen Zutaten außer der Butter vermengen.
+            Teig
+            zugedeckt im Kühlschrank über Nacht stehen lassen.<br>
+
+            Den Teig aus dem Kühlschrank nehmen und auf einer Arbeitsfläche quadratisch ausrollen. Die Butter zwischen
+            zwei
+            Frischhaltefolien auf die halbe Größe des Quadrates formen, dann mit Mehl bestäuben und auf den Hefeteig
+            legen.
+            Das Mehl ist wichtig, da sich die Butter nicht mit dem Teig vermengen darf, da sonst kein Blätterteig
+            entstehen
+            kann. Also lieber etwas zu viel als zu wenig Mehl zwischen Butter und Hefeteig ! <br>
+            Den Teig über die Butter briefumschlagartig legen, so dass von jeder Seite ein Dreieck über der Butter liegt
+            und
+            sie zudeckt. Dieses wird jetzt zu einem Rechteck ausgerollt, dieses Rechteck dreifach übereinander
+            geschlagen
+            und wieder ausgerollt. Das sollte man noch so 2 bis 3 Mal wiederholen. Dann werden Dreiecke geschnitten
+            (etwa
+            12), und diese werden von der breiten Seite zu Hörnchen geformt.
+            Den Backofen auf 220 bis 250°C vorheizen, hier scheiden sich die Geschmäcker: bis 220°C werden die
+            Croissants
+            (etwa 6 pro Blech) ca. 20 Minuten gebacken, bei 250°C etwa 12 Minuten.<br> Das ist ein herrliches Frühstück!
+        </p>
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+
+            <div class="authorImage">
+                <img class="myImage" src="img/wok.jpg"></img>
+            </div>
+
+            <div>
+                <span>Melanie</span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

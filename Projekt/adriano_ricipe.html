@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="adriano_script.js"></script>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="subContainer" id="ricipeContainer">
+        <h1>Spaghetti bolognese</h1>
+        <div class="image" id="ricipeImageAdriano"></div>
+        <div class="infoIcons">
+            <div class="icon">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>20 Min.</span>
+            </div>
+            <div class="icon">
+                <img class="imageIcon" src="img\brain-solid.svg">
+                <span>simpel</span>
+            </div>
+            <div class="icon" id="calendar">
+                <img class="imageIcon" src="img\calendar-alt-regular.svg">
+                <span>12-07-2021</span>
+            </div>
+        </div>
+        <div class="ingridients">
+            <div id="ingridientsLbl">Zutaten für</div>
+            <input type="number" min="1" placeholder="1" value="1" id="inputPortion"> <button class="button"
+                onclick="calculate()">Portionen</button>
+        </div>
+        <div class="table">
+            <div class="backgroundGray">
+                <div class="amount" id="amount1"></div>
+                <div class="unit" id="unit1"></div>
+                <div>Hackfleisch</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount2"></div>
+                <div class="unit" id="unit2"></div>
+                <div>Räucherspeck</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount3"></div>
+                <div class="unit" id="unit3"></div>
+                <div>Zwiebeln</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount4"></div>
+                <div class="unit" id="unit4"></div>
+                <div>Knoblauch</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount5"></div>
+                <div class="unit" id="unit5"></div>
+                <div>Knollensellerie</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount6"></div>
+                <div class="unit" id="unit6"></div>
+                <div>Tomate(n)</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount7"></div>
+                <div class="unit" id="unit7"></div>
+                <div>Möhre</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount8"></div>
+                <div class="unit" id="unit8"></div>
+                <div>Rotwein</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount9"></div>
+                <div class="unit" id="unit9"></div>
+                <div>Tomatenmark</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount10"></div>
+                <div class="unit" id="unit10"></div>
+                <div>Rinderbrühe</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount11"></div>
+                <div class="unit" id="unit11"></div>
+                <div>Spaghetti</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount12"></div>
+                <div class="unit" id="unit12"></div>
+                <div>Paprikapulver</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount13"></div>
+                <div class="unit" id="unit13"></div>
+                <div>Lorbeerblatt</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount14"></div>
+                <div class="unit" id="unit14"></div>
+                <div>Salz und Pfeffer</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount15"></div>
+                <div class="unit" id="unit15"></div>
+                <div>Petersilie</div>
+            </div>
+            <div class="backgroundWhite">
+                <div class="amount" id="amount16"></div>
+                <div class="unit" id="unit16"></div>
+                <div>Parmesan</div>
+            </div>
+            <div class="backgroundGray">
+                <div class="amount" id="amount17"></div>
+                <div class="unit" id="unit17"></div>
+                <div>Butter</div>
+            </div>
+
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="infoIcons" id="prepIcons">
+
+            <div class="icon" id="prepTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>20 Minuten</span>
+            </div>
+            <div class="icon" id="prepHoleTime">
+                <img class="imageIcon" src="img\clock-regular.svg">
+                <span>Gesamtzeit 20 Minuten</span>
+            </div>
+        </div>
+        <p>Zwiebeln, Knollensellerie und Möhren schälen. Anschließend in kleine Würfel schneiden; den Räucherspeck
+            ebenfalls in Würfel schneiden. Knoblauch fein hacken und Tomaten abseihen und in 1 cm große Stücke
+            schneiden. Speck mit Olivenöl anbraten und Hackfleisch dazugeben. Nach einigen Minuten Zwiebel, Gemüse und
+            Knoblauch untermengen und ein paar Minuten anrösten. Tomatenmark hinzufügen. Mit Salz, Pfeffer und
+            Paprikapulver abschmecken und mit Rotwein ablöschen. Danach Rest dazugeben und einkochen. Währenddessen
+            Spaghetti al dente kochen und abseihen. Danach in Tellern anrichten und neben der Sauce auch etwas Butter
+            dazugeben. Mit Parmesan und gehackter Petersilie servieren.</p>
+        <h3>Rezept erstellt von</h3>
+        <div class="author">
+
+            <div class="authorImage">
+
+            </div>
+
+            <div>
+                <span>Adriano</span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>
